@@ -1,14 +1,13 @@
 alert("Boas vindas ao jogo do numero secreto!!");
-let numeroSecreto = 5;
+let numeroSecreto = parseInt(Math.random() * 10);
+console.log(numeroSecreto);
 let chute = 0;
 let tentativas = 1;
-
-chute = prompt("Digite qual o numero secreto!");
 
 while (chute != numeroSecreto) {
   chute = prompt(`Digite o numero secreto:`);
   if (chute == numeroSecreto) {
-    alert("Você acertou o numero secreto, parabéns!!");
+    break;
   } else {
     if (chute < numeroSecreto) {
       chute = alert(
@@ -23,4 +22,20 @@ while (chute != numeroSecreto) {
   tentativas++;
 }
 
-alert("Você acertou o numero secreto, parabéns!!");
+// operador ternario
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(
+  `Parabéns!! Você acertou o numero secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!!`);
+
+
+// if(tentativas > 1){
+//   alert(
+//     `Parabéns!! Você acertou o numero secreto ${numeroSecreto} com ${tentativas} tentativas!!`
+//   );
+// }else{
+//   alert(
+//     `Parabéns!! Você acertou o numero secreto ${numeroSecreto} com ${tentativas} tentativa!!`
+//   );
+// }
+
+
