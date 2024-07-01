@@ -109,9 +109,45 @@ function imc(alt, peso) {
     return console.log("abaixo do peso");
   } else if (imc >= 18.5 && imc <= 24.9) {
     return console.log("peso normal");
-  } else if(imc >= 25 && imc <= 29.9){
-    return console.log("acima do peso")
+  } else if (imc >= 25 && imc <= 29.9) {
+    return console.log("acima do peso");
   } else {
-    return console.log("Obesidade grau I")
+    return console.log("Obesidade grau I");
+  }
+}
+
+function fact(n) {
+  let resultado = 1;
+  let i = n;
+  while (i > 1) {
+    resultado *= i;
+    i--;
+  }
+  return resultado;
+}
+
+function conversor(n) {
+  const dolar = 4.8;
+  return console.log(`Valor convertido para dolar ${n * dolar}`);
+}
+
+function retangulo(base, alt) {
+  let perimetro = 2 * (base + alt);
+
+  return console.log(
+    `Area da sala: ${base * alt}\nPerimetro da sala: ${perimetro}`
+  );
+}
+
+function circulo(raio) {
+  const pi = 3.14;
+  let area = pi * Math.pow(raio, 2);
+  return console.log(`Area do Circulo: ${area}`);
+}
+
+function tabuada(n) {
+  for (let i = 0; i <= 10; i++) {
+    let resultado = n * i;
+    console.log(`${n} X ${i}: ${resultado}`);
   }
 }
