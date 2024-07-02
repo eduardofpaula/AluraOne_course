@@ -3,6 +3,8 @@
 
 // let paragrafo = document.querySelector('p');
 // paragrafo.innerHTML = 'Escolha um numero entre 1 e 10';
+let numerosSorteados = [];
+let numeroLimite = 10;
 let tentativas = 1;
 let numSecreto = numeroAleatorio();
 console.log(numSecreto);
@@ -10,6 +12,7 @@ console.log(numSecreto);
 function exibirTextoTela(tag, texto) {
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
+  responsiveVoice.speak(texto, "Brazilian Portuguese Female", { rate: 1.2 });
 }
 
 mensagemInicial();
@@ -69,7 +72,21 @@ function soma() {
 }
 
 function numeroAleatorio() {
-  return parseInt(Math.random() * 10 + 1);
+  let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+  let quantidadeElementosLista = numerosSorteados.length;
+
+  if (quantidadeElementosLista == numeroLimite) {
+    numerosSorteados = [];
+  }
+  // verificando se o mesmo numero já foi sorteado
+  if (numerosSorteados.includes(numeroEscolhido)) {
+    // recursão para chamar um novo numero aleatorio
+    return numeroAleatorio();
+  } else {
+    numerosSorteados.push(numeroEscolhido);
+    console.log(numerosSorteados);
+    return numeroEscolhido;
+  }
 }
 
 function helloWorld() {
@@ -151,3 +168,11 @@ function tabuada(n) {
     console.log(`${n} X ${i}: ${resultado}`);
   }
 }
+
+let listaGenerica = [];
+let linguagensProgramacao = ["JavaScript", "C", "C++", "Kotlin", "Python"];
+linguagensProgramacao.push("Java", "Ruby", "Golang");
+console.log(linguagensProgramacao);
+console.log(linguagensProgramacao[0]);
+console.log(linguagensProgramacao[2]);
+console.log(linguagensProgramacao[7]);
