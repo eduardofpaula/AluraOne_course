@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "maiden";
+  src: url("/project/assets/font/maiden.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: "maiden";
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 35px 0 35px;
+}
+
+.logoAlura {
+  height: 150px;
+  width: 300px;
+}
+
+.textDecodificador {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(236, 0, 0);
+  width: 100%;
+}
+
+.paginaPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 35px;
+  flex: 1; /* Para ocupar o espaço restante */
+}
+
+.ladoEsquerdo, .ladoDireito {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.textoInfo {
+  margin: 0px 20px 20px 20px;
+  font-size: 20px;
+  color: #ca0707;
+}
+
+.inputTexto, .outputTexto {
+  flex-grow: 1;
+  margin: 0 20px 20px 20px;
+  width: calc(100% - 40px);
+  height: 350px; 
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px 20px;
+}
+
+button.outputCopy {
+  margin: 0 20px 20px 20px;
+  cursor: pointer;
+}
+
+.cripto, .descripto{
+  cursor: pointer;
+}
+
+/* Estilo do rodapé */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #ca0707;
+}
+
+footer a {
+  margin: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ca0707;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .paginaPrincipal {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .ladoEsquerdo, .ladoDireito {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .inputTexto, .outputTexto {
+    width: calc(100% - 40px);
+    height: 200px; 
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button.outputCopy {
+    width: calc(100% - 70px);
+  }
+}
+.outputCopy, .cripto, .descripto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #ca0707;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.outputCopy, .cripto, .descripto {
+  border-color: #000000;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.outputCopy, .cripto, .descripto:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
