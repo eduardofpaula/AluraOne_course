@@ -1,6 +1,6 @@
 @font-face {
   font-family: "maiden";
-  src: url("/project/assets/font/maiden.ttf") format("truetype");
+  src: url("maiden.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
