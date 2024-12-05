@@ -25,4 +25,16 @@ public class Musica {
     public double calcular(int numAvaliacaos,double avaliacao){
         return avaliacao / numAvaliacaos;
     }
+
+    public String avaliarMusica(double avaliacao){
+        String resultadoAvaliacao = "";
+        if(avaliacao <= 2 ){
+            return resultadoAvaliacao = "Ruim";
+        } else if (avaliacao >= 3 && avaliacao <= 4) {
+            return resultadoAvaliacao = "Otimo";
+        } else if (avaliacao >= 5) {
+            return resultadoAvaliacao = "Excelente";
+        }
+        return resultadoAvaliacao;
+    }
 }
