@@ -1,4 +1,4 @@
-package entities;
+package desafios;
 
 public class Aluno {
     private String nome;
@@ -25,9 +25,9 @@ public class Aluno {
         this.idade = idade;
     }
 
-    public void exibirInfo(){
+    public void exibirInfo() {
         System.out.printf("Nome do aluno: " + nome);
-        System.out.printf("Idade do aluno: " + idade);
+        System.out.printf("\nIdade do aluno: " + idade);
     }
 
     public static void main(String[] args) {

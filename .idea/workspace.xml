@@ -2,53 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62125d5-4fab-4d48-8b31-3bb34ab45cd7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-css/exec1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/html-css/exec1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-css/exec2.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/html-css/exec2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-css/exec2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/html-css/exec2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-css/proj1.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/html-css/proj1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/image-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/desafios.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/desafios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/JS Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/JS Game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/JS Game_files/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/JS Game_files/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/JS Game_files/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/JS Game_files/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/Ruido.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/Ruido.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/code.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/code.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/img/ia.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/img/ia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-curso-2-aula1/js-curso-2-aula_-/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/js-curso-2-aula1/js-curso-2-aula_-/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/contador10a1.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/contador10a1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/contador1a10.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/contador1a10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/contagemRegressiva.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/contagemRegressiva.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/desafio2.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/desafio2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/diaSemana.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/diaSemana.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/habilitacao.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/habilitacao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/JS Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/JS Game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/JS Game_files/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/JS Game_files/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/JS Game_files/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/JS Game_files/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/Ruido.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/Ruido.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/code.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/code.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/robot.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/robot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/img/trophy.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/img/trophy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/nome.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/nome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/numNegativo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/numNegativo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/numeroSecreto.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/numeroSecreto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/pontuacao.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/pontuacao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/saldoConta.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/saldoConta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica-js-projeto_inicial/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/logica-js-projeto_inicial/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/aluraLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/project/aluraLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/project/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/project/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/maiden.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/project/maiden.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/project/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/styleIdentificador.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPartOne/project/styleIdentificador.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPartTwo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPartTwo/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPartTwo/src/entities/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPartTwo/src/entities/Aluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,21 +14,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "eduardofpaula"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eduardofpaula&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/eduardofpaula/AluraOne_course.git",
-    "accountId": "28d39a73-6a4d-4204-a512-630160c522cb"
+    "accountId": "f9bb8204-26c8-44f3-8ac5-411ab35b864c"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2mOweoGsulmfi46A7kV8myk2CTz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -81,10 +37,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/eduar/OneDrive - Fatec Centro Paula Souza/Documentos/REPOSITORIOS/AluraOne_course",
+    "last_opened_file_path": "/home/edu/Documentos/repositories/AluraOne_course",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,8 +56,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -110,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726961027766</updated>
       <workItem from="1726961028812" duration="104000" />
+      <workItem from="1733433945697" duration="38000" />
     </task>
     <servers />
   </component>

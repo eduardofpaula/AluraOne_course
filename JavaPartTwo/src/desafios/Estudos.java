@@ -1,4 +1,4 @@
-package entities;
+package desafios;
 
 public class Estudos {
     private String anotacao;

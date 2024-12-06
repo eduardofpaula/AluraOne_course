@@ -1,16 +1,16 @@
-package entities;
+package desafios;
 
-public class Soma {
+public class Subtracao {
     private Double num1;
     private Double num2;
 
-    public Soma(Double num1, Double num2) {
+    public Subtracao(Double num1, Double num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
 
-    public Double somar(Double num1,Double num2){
-        return num1 + num2;
+    public Double subtrair(Double num1,Double num2){
+        return num1 - num2;
     }
 
     public Double getNum1() {

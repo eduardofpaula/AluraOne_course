@@ -1,4 +1,4 @@
-package entities;
+package desafios;
 
 public class Calculadora {
     public double dobro(double numero){
