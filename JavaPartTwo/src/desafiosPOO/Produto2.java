@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 public class Produto2 {
     private String nome;

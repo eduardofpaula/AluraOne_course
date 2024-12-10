@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 public class IdadePessoa {
     private String nome;

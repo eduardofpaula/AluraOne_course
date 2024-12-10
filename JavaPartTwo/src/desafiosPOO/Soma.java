@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 public class Soma {
     private Double num1;

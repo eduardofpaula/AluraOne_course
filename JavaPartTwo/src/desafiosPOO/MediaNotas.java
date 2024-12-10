@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 public class MediaNotas {
     public static void main(String[] args) {

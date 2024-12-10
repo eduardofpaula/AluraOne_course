@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 public class ContaBancaria3 {
     private double saldo;

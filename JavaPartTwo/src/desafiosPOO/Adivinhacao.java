@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 import java.util.Locale;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package desafios;
+package desafiosPOO;
 
 public class Subtracao {
     private Double num1;
