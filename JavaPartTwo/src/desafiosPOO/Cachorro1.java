@@ -23,13 +23,13 @@ public class Cachorro1 extends Animal1 {
             // Fazendo o casting para a classe Animal
             Animal animal = (Animal) cachorro;
 
-            // Chamando o método disponível na classe Animal
+            // Chamando o metodo disponível na classe Animal
             animal.emitirSom();
         } else {
             System.out.println("O objeto não é uma instância de Animal");
         }
 
-        // Observe que o método abanarRabo() não está disponível na referência de Animal
+        // Observe que o metodo abanarRabo() não está disponível na referência de Animal
         // animal.abanarRabo(); // Isso geraria um erro de compilação
     }
 }
