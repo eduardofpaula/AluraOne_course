@@ -13,6 +13,9 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public Produto() {
+    }
+
     public String getNome() {
         return nome;
     }
@@ -47,9 +50,21 @@ public class Produto {
     }
 
     public static void main(String[] args) {
-        Produto produto1 = new Produto("TV", 100, 2);
-        Produto produto2 = new Produto("Bola", 50,1);
-        Produto produto3 = new Produto("Celular", 200,3);
+        Produto produto1 = new Produto();
+        Produto produto2 = new Produto();
+        Produto produto3 = new Produto();
+
+        produto1.setNome("TV");
+        produto1.setPreco(100);
+        produto2.setQuantidade(2);
+
+        produto2.setNome("Geladeira");
+        produto2.setPreco(200);
+        produto2.setQuantidade(3);
+
+        produto3.setNome("Fogão");
+        produto3.setPreco(300);
+        produto3.setQuantidade(4);
 
         ArrayList listaProdutos = new ArrayList<>();
         listaProdutos.add(produto1);
