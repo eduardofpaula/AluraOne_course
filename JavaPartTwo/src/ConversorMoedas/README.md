@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/fbe8e345-7c29-4831-af2d-415c3735390d)
+
 # CONVERSOR DE MOEDAS
 
 ## Descrição
