@@ -1,10 +1,10 @@
 package alura.spring.springAluraOne;
 
 import alura.spring.springAluraOne.entities.Pessoa;
+import alura.spring.springAluraOne.entities.Produto;
 import alura.spring.springAluraOne.interfaces.*;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class LambdaExercises {
@@ -92,6 +92,7 @@ public class LambdaExercises {
                 .collect(Collectors.toList());
         System.out.println(unicas);
 
+        // filtrando pessoas maiores de idade, ordenando por nome e imprimindo
         List<Pessoa> pessoas = Arrays.asList(
                 new Pessoa("Alice", 22),
                 new Pessoa("Bob", 17),
@@ -103,6 +104,95 @@ public class LambdaExercises {
                 .sorted()
                 .forEach(System.out::println);
 
+        // encontrando o maior numero da lista
+        List<Integer> numeros2 = Arrays.asList(10, 20, 30, 40, 50);
+        Optional<Integer> maiorNumero = numeros2.stream()
+                .max(Integer::compare);
+        maiorNumero.ifPresent(System.out::println);
+
+        // agrupando palavras por tamanho
+        List<String> palavras3 = Arrays.asList("java", "stream", "lambda", "code");
+        Map<Integer, List<String>> tamanhos1 = palavras3.stream()
+                .collect(Collectors.groupingBy(String::length));
+        System.out.println(tamanhos1);
+
+        // concatenando elementos da lista
+        List<String> nomes = Arrays.asList("Alice", "Bob", "Charlie");
+        String resultado1 = nomes.stream()
+                .collect(Collectors.joining(", "));
+        System.out.println(resultado1);
+
+        // reduzindo uma lista de inteiros
+        List<Integer> numeros5 = Arrays.asList(1, 2, 3, 4, 5, 6);
+        int somaQuadrados = numeros5.stream()
+                .filter(n -> n % 2 == 0)
+                .map(n -> n * n)
+                // reduce recebe um valor inicial e uma função de acumulação
+                .reduce(0, Integer::sum);
+        System.out.println(somaQuadrados);
+
+        // particionando numeros impares e pares
+        List<Integer> numeros4 = Arrays.asList(1, 2, 3, 4, 5, 6);
+        Map<Boolean, List<Integer>> particionados = numeros4.stream()
+                .collect(Collectors.partitioningBy(n -> n % 2 == 0));
+        System.out.println("Pares: " + particionados.get(true));
+        System.out.println("Ímpares: " + particionados.get(false));
+
+        // agrupando produtos por categoria
+        List<Produto> produtos = Arrays.asList(
+                new Produto("Smartphone", 800.0, "Eletrônicos"),
+                new Produto("Notebook", 1500.0, "Eletrônicos"),
+                new Produto("Mesa", 700.0, "Móveis"),
+                new Produto("Cadeira", 300.0, "Móveis"),
+                new Produto("Fone de Ouvido", 100.0, "Eletrônicos"),
+                new Produto("Caneta", 5.0, "Papelaria")
+        );
+
+        Map<String,List<Produto>> produtosPorCategoria = produtos.stream()
+                .collect(Collectors.groupingBy(Produto::categoria));
+        System.out.println(produtosPorCategoria);
+
+        // quantidade de produtos por categoria
+        List<Produto> produtos1 = Arrays.asList(
+                new Produto("Smartphone", 800.0, "Eletrônicos"),
+                new Produto("Notebook", 1500.0, "Eletrônicos"),
+                new Produto("Mesa", 700.0, "Móveis"),
+                new Produto("Cadeira", 300.0, "Móveis"),
+                new Produto("Fone de Ouvido", 100.0, "Eletrônicos"),
+                new Produto("Caneta", 5.0, "Papelaria")
+        );
+
+        Map<String, Long> contagemPorCategoria = produtos1.stream()
+                .collect(Collectors.groupingBy(Produto::categoria, Collectors.counting()));
+        System.out.println(contagemPorCategoria);
+
+        // converter lista de string em lista de numeros, se a conversao falhar, ignora o valor
+        List<String> input = Arrays.asList("10", "abc", "20", "30x");
+        List<Integer> numeros6 = input.stream()
+                // map retorna um stream de inteiros, mas pode conter valores nulos
+                .map(s -> {
+                    try {
+                        return Integer.parseInt(s);
+                    } catch (NumberFormatException e) {
+                        return null;
+                    }
+                })
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+        System.out.println(numeros6);
+
+        System.out.println(verificarPalindromo("Subi no onibus"));
+        System.out.println(verificarPalindromo("Java"));
+
+
+
+
+    }
+
+    // metodo para verificar se uma string é palindromo
+    public static boolean verificarPalindromo(String string){
+        String semEspacos = string.replaceAll(" ", "").toLowerCase();
+        return new StringBuilder(semEspacos).reverse().toString().equals(semEspacos);
     }
 
 
