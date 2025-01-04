@@ -1,4 +1,4 @@
-package literAlura.aluraChallenge.entities;
+package literAlura.aluraChallenge.DTO;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
