@@ -1,6 +1,5 @@
 package literAlura.aluraChallenge.service;
 
-import literAlura.aluraChallenge.DTO.Author;
 import literAlura.aluraChallenge.DTO.Book;
 import literAlura.aluraChallenge.DTO.Result;
 import literAlura.aluraChallenge.entities.Livros;
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -73,22 +71,35 @@ public class Principal {
             for (Book livro : convertido.results()) {
                 System.out.println(" ");
                 System.out.println("Título: " + livro.titulo());
-                System.out.println("Autor: " + Arrays.stream(livro.autores())
-                        .map(Author::nome)
-                        .filter(nome -> nome != null && !nome.isEmpty()) // Ensure nome is not null or empty
-                        .collect(Collectors.joining(",")));
-                System.out.println("Ano de Morte:" + Arrays.stream(livro.autores())
-                        .map(Author::anoMorte)
-                        .filter(anoMorte -> anoMorte != 0)
-                        .map(String::valueOf)
-                        .collect(Collectors.joining(",")));
+
+                if (livro.autores() == null || livro.autores().length == 0) {
+                    System.out.println("Autor: Autor Desconhecido");
+                    System.out.println("Ano de Morte: 0000");
+                } else {
+                    // Preenche com os valores dos autores
+                    System.out.println("Autor: " + Arrays.stream(livro.autores())
+                            .map(autor -> autor.nome() != null && !autor.nome().isEmpty() ? autor.nome() : "Autor Desconhecido")
+                            .collect(Collectors.joining(",")));
+
+                    System.out.println("Ano de Morte: " + Arrays.stream(livro.autores())
+                            .map(autor -> autor.anoMorte() != 0 ? String.valueOf(autor.anoMorte()) : "0000")
+                            .collect(Collectors.joining(",")));
+                }
+
                 System.out.println("Idiomas: " + String.join(", ", livro.idiomas()));
                 System.out.println("Downloads: " + livro.downloads());
                 System.out.println(" ");
 
                 try {
                     Livros livroEntidade = converterParaEntidade(livro);
-                    System.out.println(livroEntidade.getIdLivro() + " " + livroEntidade.getNome() + " " + livroEntidade.getAutor() + " " + livroEntidade.getIdioma() + " " + livroEntidade.getNumDownloads());
+
+                    if (livroEntidade.getAutor() == null || livroEntidade.getAutor().isEmpty()) {
+                        livroEntidade.setAutor("Autor Desconhecido");
+                    }
+                    if (livroEntidade.getAnoMorte() == 0) {
+                        livroEntidade.setAnoMorte(0);
+                    }
+
                     livrosRepository.save(livroEntidade);
                     System.out.println("Livro salvo no banco de dados.");
                 } catch (Exception e) {
@@ -101,11 +112,12 @@ public class Principal {
     }
 
     public Livros converterParaEntidade(Book book) {
+        boolean b = book.autores() == null || book.autores().length == 0;
         return new Livros(
-                null, // ID será gerado automaticamente pelo banco
+                null,
                 book.titulo(),
-                book.autores()[0].nome(),
-                book.autores()[0].anoMorte(),
+                b ? null : book.autores()[0].nome(),
+                b ? 0 : book.autores()[0].anoMorte(),
                 book.idiomas()[0],
                 book.downloads()
         );
